@@ -1,0 +1,112 @@
+@import "mvp.css";
+
+.button-primary{
+    background-color: rgba(248, 217, 18, 0.99);
+}
+
+.button-primary:active{
+    background-color: rgba(227, 197, 10, 0.99);
+}
+
+.container {
+    width: 90vw;
+    height: 50vh;
+    min-width: 300px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.content-1 {
+    flex: 1 1 40%;
+}
+.highlight {
+    background: linear-gradient(transparent 60%, #ffeb3b 60%);
+    font-weight: bold;
+    display: inline;
+}
+.content-2 {
+    flex: 1 1 50%;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-border-default);
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+            2px 3px 0px 0px var(--color-border-default);
+}
+.list-media {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* Gambar ikon */
+.list-media img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.title-content {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.profile-container {
+    display: flex;
+    justify-content: left;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-border-default);
+    box-shadow:
+            2px 3px 0px 0px var(--color-border-default);
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--color-border-default);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: clamp(2rem, 7vw, 8rem);
+}
+
+
+
+@media (max-width: 480px) {
+    .profile-name{
+        text-align: center;
+    }
+}
+@media (min-width: 480px) {
+    .profile-content{
+        margin-left: 1rem;
+    }
+}
